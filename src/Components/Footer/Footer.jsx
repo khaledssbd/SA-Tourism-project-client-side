@@ -1,0 +1,93 @@
+import { Link } from 'react-router-dom';
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from 'react-icons/fa6';
+const Footer = () => {
+  return (
+    <footer className="mt-30 bg-[#030712] py-5 md:py-10 px-5 md:px-20">
+      <div className="flex justify-between items-center">
+        <div className="mb-12 text-start">
+          <Link
+            to="/"
+            className="btn btn-ghost hover:bg-white hover:text-black text-2xl md:text-4xl font-extrabold mb-4"
+            data-aos="flip-up"
+          >
+            <button className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
+              SA-Tourism
+            </button>
+          </Link>
+          <p
+            className="text-[#FFFFFFCC] text-base md:text-lg font-normal"
+            data-aos="zoom-out-right"
+          >
+            SA-Tourism is the most popular platform for <br /> your next tourism
+            arrangement.
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <h4 className="text-white text-xs sm:text-base md:text-xl font-semibold mb-5">
+            Social Links
+          </h4>
+          <div className="flex gap-4 text-3xl mb-3">
+            <span className="text-[#1877F2]">
+              <FaFacebook />
+            </span>
+            <span className="text-[#1DA1F2]">
+              <FaTwitter />
+            </span>
+            <span className="text-[#E1306C]">
+              <FaInstagram />
+            </span>
+            <span className="text-[#0077B5]">
+              <FaLinkedin />
+            </span>
+          </div>
+          <h4 className="text-white text-xs sm:text-base md:text-lg font-normal">
+            Address
+          </h4>
+          <h4 className="text-white text-xs sm:text-base">
+            228C San Pablo St. Vallejo, CA 94591
+          </h4>
+          <h4 className="text-gray-300 text-xs sm:text-sm">
+            Email: khaled@PH.com
+          </h4>
+        </div>
+      </div>
+      <hr />
+      <div className="mt-8 flex justify-between items-center">
+        <div>
+          <h5 className="text-white hidden sm:flex font-normal">
+            Copyright © 2024 - All right reserved by SA-Tourism
+          </h5>
+        </div>
+        <div className="flex gap-8">
+          <div>
+            <h5 className="text-white text-sm md:text-base font-medium">
+              Terms & condition
+            </h5>
+          </div>
+          <div>
+            <h5 className="text-white text-sm md:text-base font-medium">
+              Return & refund policy
+            </h5>
+          </div>
+          <div>
+            <h5 className="text-white text-sm md:text-base font-medium">
+              Privacy policy
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center mt-5">
+        <h5 className="text-[#FFFFFFB2] flex sm:hidden font-normal text-sm md:text-sm">
+          Copyright © 2024 - All right reserved by SA-Tourism
+        </h5>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
