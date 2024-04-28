@@ -37,9 +37,9 @@ body {
 }
 
 
-@media screen and (max-width: 426px) {
+/* @media screen and (max-width: 426px) {
   #root {
     margin-right: 10px;
     margin-left: 10px;
   }
-}
+} */
