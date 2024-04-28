@@ -12,7 +12,7 @@ const SwiperSlides = ({ allSpots }) => {
   return (
     <div>
       <h4
-        className="font-play text-xl md:text-3xl font-medium my-3 md:my-8"
+        className="font-play text-xl md:text-3xl font-medium my-10 md:my-16"
         data-aos="zoom-out"
       >
         Swiper Slides

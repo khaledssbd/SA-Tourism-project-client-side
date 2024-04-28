@@ -15,10 +15,10 @@ const Home = () => {
       <Helmet>
         <title>SA-Tourism | Home</title>
       </Helmet>
-      <SwiperSlides allSpots={allSpots}></SwiperSlides>
+      <CarouselAni allSpots={allSpots}></CarouselAni>
       <Hero />
       <Countries />
-      <CarouselAni allSpots={allSpots}></CarouselAni>
+      <SwiperSlides allSpots={allSpots}></SwiperSlides>
       <TouristsSpots allSpots={allSpots}></TouristsSpots>
       <SlidesFlip />
     </div>
