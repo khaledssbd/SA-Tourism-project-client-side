@@ -31,14 +31,14 @@ const CarouselAni = ({ allSpots }) => {
   ];
   const imageVariants = {
     center: { x: '0%', scale: 1, zIndex: 5 },
-    left1: { x: '-30%', scale: 0.8, zIndex: 4 },
-    left2: { x: '-50%', scale: 0.7, zIndex: 3 },
-    left3: { x: '-70%', scale: 0.6, zIndex: 2 },
-    left: { x: '-90%', scale: 0.5, zIndex: 1 },
-    right: { x: '90%', scale: 0.5, zIndex: 1 },
-    right3: { x: '70%', scale: 0.6, zIndex: 2 },
-    right2: { x: '50%', scale: 0.7, zIndex: 3 },
-    right1: { x: '30%', scale: 0.8, zIndex: 4 },
+    left1: { x: '-18%', scale: 0.8, zIndex: 4 },
+    left2: { x: '-32%', scale: 0.7, zIndex: 3 },
+    left3: { x: '-42%', scale: 0.6, zIndex: 2 },
+    left: { x: '-54%', scale: 0.5, zIndex: 1 },
+    right: { x: '54%', scale: 0.5, zIndex: 1 },
+    right3: { x: '42%', scale: 0.6, zIndex: 2 },
+    right2: { x: '32%', scale: 0.7, zIndex: 3 },
+    right1: { x: '18%', scale: 0.8, zIndex: 4 },
   };
 
   return (
@@ -55,16 +55,16 @@ const CarouselAni = ({ allSpots }) => {
             key={i}
             src={h.image}
             alt={h.estate_title}
-            className="rounded-[12px] absolute w-[40%]"
+            className="rounded-[12px] absolute w-[55%]"
             animate={positions[positionIndexes[i]]}
             variants={imageVariants}
             transition={{ duration: 0.5 }}
           />
         ))}
         <button
-          className="text-white mt-[200px] sm:mt-[280px] md:mt-[400px] lg:mt-[500px] bg-indigo-600 rounded-md py-2 px-4"
+          className="text-white mt-[310px] sm:mt-[400px] md:mt-[480px] lg:mt-[700px] bg-indigo-600 rounded-md py-2 px-4 mb-10"
           onClick={handleNext}
-          data-aos="zoom-out-up"
+          // data-aos="zoom-out-up"
         >
           Next
         </button>
