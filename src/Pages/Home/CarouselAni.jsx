@@ -44,7 +44,7 @@ const CarouselAni = ({ allSpots }) => {
   return (
     <div className="mt-10 md:mt-24 mb-0 md:mb-16">
       <h4
-        className="text-[#131313] font-play text-xl md:text-3xl font-medium"
+        className="font-play text-xl md:text-3xl font-medium"
         data-aos="zoom-in"
       >
         Carousel Spots
