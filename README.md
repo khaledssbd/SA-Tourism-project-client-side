@@ -9,11 +9,12 @@
 
 # Features:
 
+- Creative Design
 - All Device Responsive
 - CRUD or REST(Representational State Transfer) API(Application Programming
   Interface) support with post get put delete requests
 - Custom API and Server configuration with database
-- tailwind CSS design
+- tailwind CSS
 - Toast Message and sweet-alert2
 - aos, swiper and animate.css Implementation
 - Environment Variable configuration
@@ -22,6 +23,7 @@
 - Protected routes
 - Local Storage and API post configuration with Protected route
 - Adaptable & Robust
+- No lorem text and no javascript default alart
 
 # npm Challenge Packages
 

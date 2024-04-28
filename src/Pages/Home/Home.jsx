@@ -15,8 +15,8 @@ const Home = () => {
       <Helmet>
         <title>SA-Tourism | Home</title>
       </Helmet>
-      <Hero />
       <CarouselAni allSpots={allSpots}></CarouselAni>
+      <Hero />
       <Countries />
       <SwiperSlides allSpots={allSpots}></SwiperSlides>
       <TouristsSpots allSpots={allSpots}></TouristsSpots>

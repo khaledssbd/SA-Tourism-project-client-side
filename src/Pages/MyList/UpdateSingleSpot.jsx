@@ -187,7 +187,7 @@ const UpdateSingleSpot = () => {
                 name="totalVisitorsPerYear"
                 defaultValue={totalVisitorsPerYear}
               />
-              <label className="block mt-4 mb-1 text-red-500">
+              {/* <label className="block mt-4 mb-1 text-red-500">
                 Your Name {'(unchangeable)'}
               </label>
               <input
@@ -210,7 +210,7 @@ const UpdateSingleSpot = () => {
                 placeholder="Your email"
                 defaultValue={user_email}
                 readOnly
-              />
+              /> */}
             </div>
           </div>
 

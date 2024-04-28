@@ -20,7 +20,7 @@ const Countries = () => {
           style={{ color: 'black', fontWeight: 'bold', background: 'white' }}
         >
           <Typewriter
-            words={['Countries we plan']}
+            words={['Countries we plan', 'Bangladesh', 'Vietnam', 'Cambodia', 'Indonesia', 'Malaysia', 'Thailand']}
             loop={55}
             cursor
             cursorStyle="_"
