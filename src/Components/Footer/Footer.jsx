@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="mb-12 text-start">
           <Link
             to="/"
-            className="btn btn-ghost hover:bg-white hover:text-black text-base md:text-4xl font-extrabold mb-4"
+            className="btn btn-ghost hover:bg-white hover:text-black text-base md:text-4xl font-extrabold md:mb-4"
             data-aos="flip-up"
           >
             <button className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
@@ -28,10 +28,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <h4 className="text-white text-xs sm:text-base md:text-xl font-semibold mb-5">
+          <h4 className="text-white text-xs sm:text-base md:text-xl font-semibold mb-2 md:mb-5">
             Social Links
           </h4>
-          <div className="flex gap-4 text-3xl mb-3">
+          <div className="flex gap-4 text-xl md:text-3xl mb-3">
             <span className="text-[#1877F2]">
               <FaFacebook />
             </span>
@@ -46,7 +46,7 @@ const Footer = () => {
             </span>
           </div>
           <h4 className="text-white text-xs sm:text-base md:text-lg font-normal">
-            Address
+            Address:-
           </h4>
           <h4 className="text-white text-xs sm:text-base">
             228C San Pablo St. Vallejo, CA 94591
