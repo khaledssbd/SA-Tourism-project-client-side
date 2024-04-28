@@ -3,6 +3,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet-async';
+import { Typewriter } from 'react-simple-typewriter';
 
 const AddTouristsSpot = () => {
   const { user } = useContext(AuthContext);
@@ -69,7 +70,19 @@ const AddTouristsSpot = () => {
       <Helmet>
         <title>SA-Tourism | Add Spot</title>
       </Helmet>
-      <h5 className="text-2xl font-bold">Add Tourists Spot</h5>
+      <h5 className="text-2xl font-bold">
+        <span style={{ color: 'black', fontWeight: 'bold' }}>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['Add Tourists Spot']}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
+      </h5>
       <div className="mt-8 mx-auto w-full md:w-2/3">
         <form onSubmit={handleAddProduct}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

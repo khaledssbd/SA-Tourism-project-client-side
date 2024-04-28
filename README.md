@@ -25,6 +25,8 @@
 # npm Challenge Packages
 
 - npm i lottie-react (in error page and loading. e.g. [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
+- npm i react-simple-typewriter (in hero section and country title, 'Add Tourists Spot' page title)
+- npm install react-tooltip (in userImage which will be showed after login)
 
 
 

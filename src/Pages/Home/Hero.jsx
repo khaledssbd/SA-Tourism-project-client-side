@@ -1,5 +1,6 @@
 import heroImg from '../../assets/heroImg.png';
 import niceSvg from '../../assets/nice.svg';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   return (
@@ -14,27 +15,36 @@ const Hero = () => {
       }}
       className="mt-16 mb-10 h-[500px] w-auto rounded-3xl py-20 md:mb-[100px] md:h-[600px] md:p-[130px] flex flex-col items-center"
     >
-      <img className="w-20 mb-8" src={niceSvg} alt="SA-Tourism" />
+      <img className="w-20 mb-5 md:mb-8" src={niceSvg} alt="SA-Tourism" />
       <h3
         className="text-xl md:text-4xl font-black my-5 bg-gradient-to-r from-primary via-blue-600 to-secondary bg-300% text-transparent bg-clip-text animate-gradient"
-        data-aos="zoom-in-up"
+        // data-aos="zoom-in-up"
       >
         SA-Tourism
       </h3>
       <h3
         className="text-xl font-bold md:text-4xl bg-gradient-to-r from-primary via-green-600 to-secondary bg-300% text-transparent bg-clip-text animate-gradient"
-        data-aos="fade-up-right"
+        // data-aos="fade-up-right"
       >
         Arrange your next tour with the best tour experts and get <br /> awesome
         discounts for you.
       </h3>
       <h5
         className="font-inter mb-10 mt-4 text-sm font-normal text-white md:text-lg px-3"
-        data-aos="fade-down-right"
+        // data-aos="fade-down-right"
       >
-        We are the best tour planner and we guide and arrange comfortfull and
-        secured tour for our Customers. <br /> We confirm both your enjoyment
-        and security in your tour.
+        <span style={{ color: 'white', fontWeight: 'bold' }}>
+          <Typewriter
+            words={[
+              'We are the best tour planner as we guide and arrange comfortfull and secured tour for our Customers. We confirm both your enjoyment and security in your tour.',
+            ]}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
       </h5>
     </div>
   );

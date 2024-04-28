@@ -5,6 +5,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import 'react-tooltip/dist/react-tooltip.css';
 
 const Root = () => {
   useEffect(() => {

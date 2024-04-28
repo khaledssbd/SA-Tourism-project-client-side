@@ -3,6 +3,7 @@ import userImg from '../../assets/user.png';
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import toast from 'react-hot-toast';
+import { Tooltip } from 'react-tooltip';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -125,24 +126,38 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <>
+            {/* <label className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img
+                  title={
+                    user?.displayName ? user?.displayName : 'No Name Set Yet'
+                  }
+                  src={user?.photoURL || userImg}
+                />
+              </div>
+            </label> */}
             <div className="dropdown">
               <div
                 tabIndex={0}
                 role="button"
                 className="m-1 btn btn-ghost btn-circle avatar"
               >
-                <div className="w-10 rounded-full">
-                  <img
-                    title={
-                      user?.displayName ? user?.displayName : 'No Name Set Yet'
-                    }
-                    src={user?.photoURL || userImg}
-                  />
+                <div
+                  className="w-10 rounded-full"
+                  data-tooltip-id="userName"
+                  data-tooltip-content={
+                    user?.displayName ? user?.displayName : 'No Name Set Yet'
+                  }
+                  data-tooltip-place="left"
+                >
+                  <img src={user?.photoURL || userImg} />
+
+                  <Tooltip id="userName" />
                 </div>
               </div>
               <ul
                 tabIndex={0}
-                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-36 -ml-20"
               >
                 <li>
                   <Link
@@ -177,7 +192,6 @@ const Navbar = () => {
             >
               Log Out
             </button> */}
-            
           </>
         ) : (
           <>

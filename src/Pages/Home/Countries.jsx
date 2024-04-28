@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -14,11 +15,18 @@ const Countries = () => {
 
   return (
     <div>
-      <h4
-        className="text-[#131313] font-play text-xl md:text-3xl font-medium"
-        data-aos="zoom-in"
-      >
-        Countries we plan ({countries.length})
+      <h4 className="text-[#131313] font-play text-xl md:text-3xl font-medium">
+        <span style={{ color: 'black', fontWeight: 'bold' }}>
+          <Typewriter
+            words={['Countries we plan']}
+            loop={55}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
       </h4>
       <div className="my-16 flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
