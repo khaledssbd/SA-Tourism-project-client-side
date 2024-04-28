@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import CountryBasedSpotsCard from './CountryBasedSpotsCard';
+import { Helmet } from 'react-helmet-async';
 
 const CountryBasedSpots = () => {
   const { country } = useParams();
@@ -7,6 +8,9 @@ const CountryBasedSpots = () => {
 
   return (
     <div className="mt-8 sm:px-6">
+      <Helmet>
+        <title>SA-Tourism | Spots In {country}</title>
+      </Helmet>
       <h5 className="text-2xl font-bold">
         Tourists Spots in {country}: ({spots.length})
       </h5>

@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from 'react-router-dom';
 import { addToFavourite, getFavouriteSpots } from '../../Utils/Utils';
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const TouristsSpotDetails = () => {
   const [showCheckOut, setShowCheckOut] = useState(false);
@@ -35,6 +36,9 @@ const TouristsSpotDetails = () => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-5 lg:my-10">
+      <Helmet>
+        <title>SA-Tourism | {tourists_spot_name}</title>
+      </Helmet>
       <div className="my-5 lg:my-16">
         <div className="p-2 rounded-2xl bg-gray-300 flex justify-center items-center">
           <img

@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2';
 import toast from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const UpdateSingleSpot = () => {
   const spot = useLoaderData();
@@ -74,6 +75,9 @@ const UpdateSingleSpot = () => {
 
   return (
     <div className="my-8 sm:px-6">
+      <Helmet>
+        <title>SA-Tourism | Update Spot</title>
+      </Helmet>
       <h5 className="text-2xl font-bold">
         Update The Spot ({tourists_spot_name})
       </h5>

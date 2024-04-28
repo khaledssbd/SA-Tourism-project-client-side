@@ -2,6 +2,7 @@ import { useLoaderData } from 'react-router-dom';
 import SingleTouristsSpotCard from './SingleTouristsSpotCard';
 import { useState } from 'react';
 import { RiArrowDropDownLine } from 'react-icons/ri';
+import { Helmet } from 'react-helmet-async';
 
 const AllTouristsSpot = () => {
   const allTouristsSpot = useLoaderData();
@@ -33,6 +34,9 @@ const AllTouristsSpot = () => {
 
   return (
     <div className="mt-8 sm:px-6">
+      <Helmet>
+        <title>SA-Tourism | All Spots</title>
+      </Helmet>
       <h5 className="text-2xl font-bold">
         All Tourists Spots: ({allSpots.length})
       </h5>

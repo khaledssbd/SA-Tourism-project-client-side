@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const MyList = () => {
   const [myAddedSpots, setMyAddedSpots] = useState([]);
@@ -45,6 +46,9 @@ const MyList = () => {
 
   return (
     <div className="my-10 sm:px-6">
+      <Helmet>
+        <title>SA-Tourism | My List</title>
+      </Helmet>
       <h5 className="text-2xl font-bold mb-8">Spots added by me</h5>
       <div className="overflow-x-auto rounded-2xl border border-black">
         <table className="table table-zebra">

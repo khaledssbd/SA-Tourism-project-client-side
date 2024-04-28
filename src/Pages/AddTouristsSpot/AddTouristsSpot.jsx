@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const AddTouristsSpot = () => {
   const { user } = useContext(AuthContext);
@@ -65,13 +66,18 @@ const AddTouristsSpot = () => {
 
   return (
     <div className="my-8 sm:px-6">
+      <Helmet>
+        <title>SA-Tourism | Add Spot</title>
+      </Helmet>
       <h5 className="text-2xl font-bold">Add Tourists Spot</h5>
       <div className="mt-8 mx-auto w-full md:w-2/3">
         <form onSubmit={handleAddProduct}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left side */}
             <div className="flex-1">
-              <label className="block mb-1">Spot Image</label>
+              <label className="block mb-1">
+                Spot Image (1440px x 960px suits best)
+              </label>
               <input
                 className="w-full p-2 border rounded-lg focus:outline-green-500"
                 type="text"
