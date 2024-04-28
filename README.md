@@ -10,7 +10,7 @@
 # Features:
 
 - All Device Responsive
-- API support
+- CRUD or REST(Representational State Transfer) API(Application Programming Interface) support with post get put delete requests
 - Custom API and Server configuration with database
 - tailwind CSS design
 - Toast Message and sweet-alert2
@@ -19,7 +19,7 @@
 - Regex with Valid email
 - Regex with Uppercase letters, lowercase letters and 6 characters in password
 - Protected routes
-- Local Storage configuration with Protected route
+- Local Storage and API post configuration with Protected route
 - Adaptable & Robust
 
 # npm Packages

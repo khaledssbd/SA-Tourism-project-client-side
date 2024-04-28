@@ -54,7 +54,7 @@ const UpdateSingleSpot = () => {
       totalVisitorsPerYear,
     };
 
-    fetch(`http://localhost:5000/updateSpot/${_id}`, {
+    fetch(`https://ph-a10-server.vercel.app/updateSpot/${_id}`, {
       method: 'PATCH',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(UpdateInfo),

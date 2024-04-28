@@ -8,7 +8,7 @@ const MyList = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/getMine/${user?.email}`)
+    fetch(`https://ph-a10-server.vercel.app/getMine/${user?.email}`)
       .then(res => res.json())
       .then(data => {
         setMyAddedSpots(data);
@@ -27,7 +27,7 @@ const MyList = () => {
       confirmButtonText: 'Yes, delete it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/deleteSpot/${id}`, {
+        fetch(`https://ph-a10-server.vercel.app/deleteSpot/${id}`, {
           method: 'DELETE',
         })
           .then(res => res.json())

@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        loader: () => fetch('http://localhost:5000/allTouristsSpot'),
+        loader: () => fetch('https://ph-a10-server.vercel.app/allTouristsSpot'),
         element: <Home />,
       },
       {
@@ -35,14 +35,16 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '/all-tourists-spot',
-        loader: () => fetch('http://localhost:5000/allTouristsSpot'),
+        path: '/all-tourists-spots',
+        loader: () => fetch('https://ph-a10-server.vercel.app/allTouristsSpot'),
         element: <AllTouristsSpot />,
       },
       {
         path: '/spot-details/:id',
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allTouristsSpot/${params.id}`),
+          fetch(
+            `https://ph-a10-server.vercel.app/allTouristsSpot/${params.id}`
+          ),
         element: (
           <PrivateRoute>
             <TouristsSpotDetails />
@@ -51,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/favourite-spots',
-        loader: () => fetch('http://localhost:5000/allTouristsSpot'),
+        loader: () => fetch('https://ph-a10-server.vercel.app/allTouristsSpot'),
         element: (
           <PrivateRoute>
             <FavouriteSpots />
@@ -69,7 +71,9 @@ const router = createBrowserRouter([
       {
         path: '/update-spot/:id',
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/allTouristsSpot/${params.id}`),
+          fetch(
+            `https://ph-a10-server.vercel.app/allTouristsSpot/${params.id}`
+          ),
         element: (
           <PrivateRoute>
             <UpdateSingleSpot />
@@ -79,7 +83,9 @@ const router = createBrowserRouter([
       {
         path: '/country-based-spots/:country',
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/getSpotsByCountry/${params.country}`),
+          fetch(
+            `https://ph-a10-server.vercel.app/getSpotsByCountry/${params.country}`
+          ),
         element: <CountryBasedSpots />,
       },
       {

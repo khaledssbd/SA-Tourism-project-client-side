@@ -35,9 +35,9 @@ const Navbar = () => {
               ? 'text-red-500 border-b-4 border-red-500'
               : 'hover:text-red-500'
           }
-          to="/all-tourists-spot"
+          to="/all-tourists-spots"
         >
-          All Tourists Spot
+          All Tourists Spots
         </NavLink>
       </li>
       {user && (

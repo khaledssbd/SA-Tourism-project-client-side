@@ -44,7 +44,7 @@ const AddTouristsSpot = () => {
       user_email,
     };
 
-    fetch('http://localhost:5000/addTouristsSpot', {
+    fetch('https://ph-a10-server.vercel.app/addTouristsSpot', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(info),
