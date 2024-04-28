@@ -16,11 +16,17 @@ const Countries = () => {
   return (
     <div>
       <h4 className="text-[#131313] font-play text-xl md:text-3xl font-medium">
-        <span
-          style={{ color: 'black', fontWeight: 'bold', background: 'white' }}
-        >
+        <span style={{ color: '#fa237d', fontWeight: 'bold' }}>
           <Typewriter
-            words={['Countries we plan', 'Bangladesh', 'Vietnam', 'Cambodia', 'Indonesia', 'Malaysia', 'Thailand']}
+            words={[
+              'Countries we plan',
+              'Bangladesh',
+              'Vietnam',
+              'Cambodia',
+              'Indonesia',
+              'Malaysia',
+              'Thailand',
+            ]}
             loop={55}
             cursor
             cursorStyle="_"

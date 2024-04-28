@@ -71,10 +71,7 @@ const AddTouristsSpot = () => {
         <title>SA-Tourism | Add Spot</title>
       </Helmet>
       <h5 className="text-2xl font-bold">
-        <span
-          style={{ color: 'black', fontWeight: 'bold', background: 'white' }}
-        >
-          {/* Style will be inherited from the parent element */}
+        <span style={{ color: '#fa237d', fontWeight: 'bold' }}>
           <Typewriter
             words={['Add Tourists Spot']}
             loop={55}
