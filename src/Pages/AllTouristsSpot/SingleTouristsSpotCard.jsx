@@ -16,7 +16,10 @@ const SingleTouristsSpotCard = ({ spot }) => {
   } = spot;
 
   return (
-    <div className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary">
+    <div
+      className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary"
+      data-aos="zoom-out-up"
+    >
       <div className="rounded-2xl bg-white">
         <img
           className="rounded-2xl border border-gray-600 w-full h-60"

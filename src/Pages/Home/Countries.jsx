@@ -13,23 +13,32 @@ const Countries = () => {
   }, []);
 
   return (
-    <div className="my-16 flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {countries.map(country => (
-          <Link
-            to={`/country-based-spots/${country.country_Name}`}
-            key={country._id}
-            className="p-3 bg-gray-200 rounded-xl hover:shadow-inner transform hover:scale-105 hover:bg-opacity-50 transition ease-out duration-200"
-          >
-            <img className="h-64 rounded-lg" src={country.image} alt="" />
-            <h3 className="font-medium text-lg my-5 text-red-600">
-              Country: {country.country_Name}
-            </h3>
-            <p className="font-medium text-sm text-justify mx-5">
-              Description: {country.short_description}
-            </p>
-          </Link>
-        ))}
+    <div>
+      <h4
+        className="text-[#131313] font-play text-xl md:text-3xl font-medium"
+        data-aos="zoom-in"
+      >
+        Countries we plan ({countries.length})
+      </h4>
+      <div className="my-16 flex justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {countries.map(country => (
+            <Link
+              to={`/country-based-spots/${country.country_Name}`}
+              key={country._id}
+              className="p-3 bg-gray-200 rounded-xl hover:shadow-inner transform hover:scale-105 hover:bg-opacity-50 transition ease-out duration-200"
+              data-aos="zoom-out-up"
+            >
+              <img className="h-64 rounded-lg" src={country.image} alt="" />
+              <h3 className="font-medium text-lg my-5 text-red-600">
+                Country: {country.country_Name}
+              </h3>
+              <p className="font-medium text-sm text-justify mx-5">
+                {country.short_description}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
