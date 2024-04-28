@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
-import errorImg from '../../assets/404.svg'
+import Error from '../../Components/AllLootie/Error';
 
 const ErrorPage = () => {
   const navigate = useNavigate();
@@ -12,8 +12,7 @@ const ErrorPage = () => {
       </Helmet>
       <div className="container flex items-center min-h-screen px-6 py-12 mx-auto">
         <div className="flex flex-col items-center max-w-sm mx-auto text-center">
-          <img src={errorImg} alt="" />
-
+          <Error />
           <h1 className="mt-3 text-2xl font-semibold text-gray-800  md:text-3xl">
             Wrong path browsing!
           </h1>

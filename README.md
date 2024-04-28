@@ -22,6 +22,12 @@
 - Local Storage and API post configuration with Protected route
 - Adaptable & Robust
 
+# npm Challenge Packages
+
+- npm i lottie-react (in error page. e.g. [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
+
+
+
 # npm Packages
 
 - npm i aos
