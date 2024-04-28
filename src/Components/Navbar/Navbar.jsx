@@ -195,7 +195,7 @@ const Navbar = () => {
                   data-tooltip-content={
                     user?.displayName ? user?.displayName : 'No Name Set Yet'
                   }
-                  data-tooltip-place="left"
+                  data-tooltip-place="top"
                 >
                   <img src={user?.photoURL || userImg} />
 
