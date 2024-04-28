@@ -50,7 +50,7 @@ const MyList = () => {
       <h5 className="text-2xl font-bold mb-8">Spots added by me</h5>
       <div className="overflow-x-auto rounded-2xl border border-black">
         <table className="table table-zebra">
-          {/* head */}
+          {/* head starts here */}
           <thead className="bg-green-400">
             <tr>
               <th className="text-sm text-black">Sl</th>
@@ -58,12 +58,12 @@ const MyList = () => {
               <th className="text-sm text-black">Location</th>
               <th className="text-sm text-black">Average Cost</th>
               <th className="text-sm text-black">Seasonality</th>
-              <th className="text-sm text-black">Update</th>
-              <th className="text-sm text-black">Delete</th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
-            {/* row starts */}
+            {/* row starts here */}
             {myAddedSpots.map((spot, i) => (
               <tr key={spot._id}>
                 <th>{i + 1}.</th>
