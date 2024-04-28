@@ -17,7 +17,7 @@ const SingleTouristsSpotCard = ({ spot }) => {
 
   return (
     <div
-      className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary"
+      className="rounded-2xl bg-white border-2 p-6 flex flex-col border-opacity-30 border-primary"
       data-aos="zoom-out-up"
     >
       <div className="rounded-2xl bg-white">
@@ -27,7 +27,7 @@ const SingleTouristsSpotCard = ({ spot }) => {
           alt={tourists_spot_name}
         />
       </div>
-      <h3 className="text-[#131313] font-play text-base sm:text-xl md:text-2xl font-bold flex-grow mt-4">
+      <h3 className="text-black font-play text-base sm:text-xl md:text-2xl font-bold flex-grow mt-4">
         {tourists_spot_name}
       </h3>
 
@@ -36,7 +36,7 @@ const SingleTouristsSpotCard = ({ spot }) => {
         <FaLocationPin />
         {location}
       </div>
-      <div className="pl-5 md:pl-8 py-5 my-5 border-y-2 border-dashed space-y-3">
+      <div className="text-black pl-5 md:pl-8 py-5 my-5 border-y-2 border-dashed space-y-3">
         <div className="flex justify-center items-center text-sm font-medium gap-2">
           Average Cost:
           <FaSackDollar />

@@ -95,7 +95,7 @@ const FavouriteSpots = () => {
               src={spot.image}
               alt={spot.tourists_spot_name}
             />
-            <div className="space-y-2 flex-grow">
+            <div className="space-y-2 flex-grow text-black">
               <h3 className="font-bold">{spot.tourists_spot_name}</h3>
               <h3 className="text-start text-sm font-sans">
                 Location: {spot.location}

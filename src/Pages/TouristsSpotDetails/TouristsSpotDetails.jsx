@@ -57,14 +57,13 @@ const TouristsSpotDetails = () => {
           {tourists_spot_name}
         </h3>
 
-        <h3 className="text-base font-bold my-10 text-justify">
-          Description:{' '}
-          <span className="text-gray-500 font-normal">{short_description}</span>
+        <h3 className="text-base font-bold text-gray-500 my-10 text-justify">
+          Description: <span className="font-normal">{short_description}</span>
         </h3>
 
         <div className="space-y-5">
           <div className="grid grid-cols-3">
-            <h4 className="text-gray-500 text-base font-normal">
+            <h4 className="text-base font-normal">
               Average Cost:
             </h4>
             <div className="col-span-2">
@@ -73,7 +72,7 @@ const TouristsSpotDetails = () => {
           </div>
 
           <div className="grid grid-cols-3">
-            <h4 className="text-gray-500 text-base font-normal">
+            <h4 className="text-base font-normal">
               Best season to travel:
             </h4>
             <div className="col-span-2">
@@ -82,7 +81,7 @@ const TouristsSpotDetails = () => {
           </div>
 
           <div className="grid grid-cols-3">
-            <h4 className="text-gray-500 text-base font-normal">
+            <h4 className="text-base font-normal">
               Travel Time:
             </h4>
             <div className="col-span-2">
@@ -91,7 +90,7 @@ const TouristsSpotDetails = () => {
           </div>
 
           <div className="grid grid-cols-3">
-            <h4 className="text-gray-500 text-base font-normal">
+            <h4 className="text-base font-normal">
               Total Visitors Per Year:
             </h4>
             <div className="col-span-2">

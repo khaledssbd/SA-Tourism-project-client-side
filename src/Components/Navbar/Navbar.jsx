@@ -243,12 +243,12 @@ const Navbar = () => {
         ) : (
           <>
             <Link to="/login">
-              <button className="btn btn-outline bg-blue-600 hover:bg-black text-white">
+              <button className="btn btn-outline bg-blue-600 hover:bg-black text-white hover:text-white mx-2">
                 Login
               </button>
             </Link>
             <Link to="/register">
-              <button className="btn btn-outline bg-blue-600 hover:bg-black text-white hidden sm:flex ml-2">
+              <button className="btn btn-outline bg-blue-600 hover:bg-black text-white hover:text-white hidden sm:flex">
                 Register
               </button>
             </Link>
