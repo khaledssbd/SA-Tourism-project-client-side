@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="mb-12 text-start">
           <Link
             to="/"
-            className="btn btn-ghost hover:bg-white hover:text-black text-2xl md:text-4xl font-extrabold mb-4"
+            className="btn btn-ghost hover:bg-white hover:text-black text-base md:text-4xl font-extrabold mb-4"
             data-aos="flip-up"
           >
             <button className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
@@ -20,10 +20,10 @@ const Footer = () => {
             </button>
           </Link>
           <p
-            className="text-[#FFFFFFCC] text-base md:text-lg font-normal"
+            className="text-[#FFFFFFCC] text-sm md:text-lg font-normal"
             data-aos="zoom-out-right"
           >
-            SA-Tourism is the most popular platform for <br /> your next tourism
+            SA-Tourism is the most popular platform for your <br /> next tourism
             arrangement.
           </p>
         </div>

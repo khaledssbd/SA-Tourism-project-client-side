@@ -35,7 +35,7 @@ const SwiperSlides = ({ allSpots }) => {
             <SwiperSlide key={i}>
               <img
                 src={spot.image}
-                className="rounded-2xl px-1 w-full h-96"
+                className="rounded-2xl px-1 w-full h-52 md:h-96"
                 alt={spot.tourists_spot_name}
               />
             </SwiperSlide>

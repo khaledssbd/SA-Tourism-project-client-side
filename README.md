@@ -24,7 +24,7 @@
 
 # npm Challenge Packages
 
-- npm i lottie-react (in error page. e.g. [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
+- npm i lottie-react (in error page and loading. e.g. [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
 
 
 
