@@ -10,7 +10,8 @@
 # Features:
 
 - All Device Responsive
-- CRUD or REST(Representational State Transfer) API(Application Programming Interface) support with post get put delete requests
+- CRUD or REST(Representational State Transfer) API(Application Programming
+  Interface) support with post get put delete requests
 - Custom API and Server configuration with database
 - tailwind CSS design
 - Toast Message and sweet-alert2
@@ -28,7 +29,7 @@
 - npm i react-simple-typewriter (in hero section and country title, 'Add Tourists Spot' page title)
 - npm install react-tooltip (in userImage which will be showed after login)
 
-
+# Selected category name- B9 A10 Type-01 Requirements (Southeast Asia)
 
 # npm Packages
 
