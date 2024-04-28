@@ -17,7 +17,6 @@ const MyList = () => {
   }, [user?.email]);
 
   const handleDelete = id => {
-    console.log(id);
     Swal.fire({
       title: 'Confirm to delete?',
       text: "You won't be able to revert this!",
@@ -33,7 +32,6 @@ const MyList = () => {
         })
           .then(res => res.json())
           .then(data => {
-            console.log(data);
             if (data.deletedCount > 0) {
               Swal.fire('Deleted!', 'Your Coffee has been deleted.', 'success');
               const remaining = myAddedSpots.filter(cof => cof._id !== id);
