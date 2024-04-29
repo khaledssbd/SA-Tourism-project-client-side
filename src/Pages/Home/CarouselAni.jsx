@@ -33,10 +33,10 @@ const CarouselAni = ({ allSpots }) => {
     center: { x: '0%', scale: 1, zIndex: 5 },
     left1: { x: '-18%', scale: 0.8, zIndex: 4 },
     left2: { x: '-32%', scale: 0.7, zIndex: 3 },
-    left3: { x: '-42%', scale: 0.6, zIndex: 2 },
+    left3: { x: '-44%', scale: 0.6, zIndex: 2 },
     left: { x: '-54%', scale: 0.5, zIndex: 1 },
     right: { x: '54%', scale: 0.5, zIndex: 1 },
-    right3: { x: '42%', scale: 0.6, zIndex: 2 },
+    right3: { x: '44%', scale: 0.6, zIndex: 2 },
     right2: { x: '32%', scale: 0.7, zIndex: 3 },
     right1: { x: '18%', scale: 0.8, zIndex: 4 },
   };
