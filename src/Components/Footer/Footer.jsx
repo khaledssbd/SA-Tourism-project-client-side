@@ -32,18 +32,30 @@ const Footer = () => {
             Social Links
           </h4>
           <div className="flex gap-4 text-xl md:text-3xl mb-3">
-            <span className="text-[#1877F2]">
+            <a
+              href="https://www.facebook.com/khaledsshuvo1"
+              className="text-[#1877F2] cursor-pointer"
+            >
               <FaFacebook />
-            </span>
-            <span className="text-[#1DA1F2]">
+            </a>
+            <a
+              href="https://twitter.com/mdkhaledsshuvo"
+              className="text-[#1DA1F2] cursor-pointer"
+            >
               <FaTwitter />
-            </span>
-            <span className="text-[#E1306C]">
+            </a>
+            <a
+              href="https://www.instagram.com/mdkhaledsshuvo"
+              className="text-[#E1306C] cursor-pointer"
+            >
               <FaInstagram />
-            </span>
-            <span className="text-[#0077B5]">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mdkhaledsshuvo"
+              className="text-[#0077B5] cursor-pointer"
+            >
               <FaLinkedin />
-            </span>
+            </a>
           </div>
           <h4 className="text-white text-xs sm:text-base md:text-lg font-normal">
             Address:-

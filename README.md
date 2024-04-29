@@ -5,7 +5,8 @@
 - Click here- [SA-Tourism on firebase](https://sa-tourism-khaled.web.app)
 - Click here- [SA-Tourism on vercel](https://ph-a10-client-by-khaled.vercel.app)
 - Click here- [SA-Tourism on surge](https://ph-a10-client-by-khaled.surge.sh)
-- Click here- [SA-Tourism on netlify](https://ph-a10-client-by-khaled.netlify.app)
+- Click here-
+  [SA-Tourism on netlify](https://ph-a10-client-by-khaled.netlify.app)
 
 # Features:
 
@@ -26,13 +27,15 @@
 - Adaptable & Robust
 - No lorem text and no javascript default alart
 
+# Selected category name- B9 A10 Type-01 Requirements (Southeast Asia)
+
 # npm Challenge Packages
 
-- npm i lottie-react (in error page and loading. e.g. [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
-- npm i react-simple-typewriter (in hero section and country title, 'Add Tourists Spot' page title)
+- npm i lottie-react (in error page and loading. e.g.
+  [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
+- npm i react-simple-typewriter (in hero section and country title, 'Add
+  Tourists Spot' page title)
 - npm install react-tooltip (in userImage which will be showed after login)
-
-# Selected category name- B9 A10 Type-01 Requirements (Southeast Asia)
 
 # npm Packages
 

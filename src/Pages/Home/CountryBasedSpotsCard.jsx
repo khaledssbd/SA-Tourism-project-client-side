@@ -14,26 +14,26 @@ const CountryBasedSpotsCard = ({ spot }) => {
   } = spot;
 
   return (
-    <div className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary hover:shadow-inner transform hover:scale-105 hover:bg-opacity-80 transition ease-out duration-200">
-      <h3 className="font-play text-base sm:text-xl md:text-2xl font-bold flex-grow mt-4">
+    <div className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary bg-white hover:shadow-inner transform hover:scale-105 hover:bg-opacity-80 transition ease-out duration-200">
+      <h3 className="font-play text-base text-black sm:text-xl md:text-2xl font-bold flex-grow mt-4">
         {tourists_spot_name}
       </h3>
       <div className="flex justify-center items-center text-sm font-medium gap-1 mt-4 text-green-700">
         Country: {country_Name}
       </div>
-      <div className="flex justify-center items-center text-sm font-medium gap-1 mt-4">
+      <div className="flex justify-center items-center text-black text-sm font-medium gap-1 mt-4">
         <FaLocationPin />
         {location}
       </div>
-      <div className="pl-5 md:pl-8 py-5 my-5 border-y-2 border-dashed space-y-5">
-        <div className="flex justify-center items-center text-sm font-medium gap-2">
+      <div className="pl-5 md:pl-8 py-5 my-5 border-y-2 border-dashed border-gray-400 space-y-5">
+        <div className="flex justify-center items-center text-sm text-black font-medium gap-2">
           Average Cost:
           <FaSackDollar />
           {average_cost}
         </div>
 
         <div className="text-base font-medium text-red-500">
-          Best season to travel:{' '}
+          Best season for tour:{' '}
           <span
             className={`p-2 m-2 text-black rounded-md ${
               seasonality === 'Summer' ? 'bg-orange-400' : 'bg-green-400'
@@ -42,7 +42,7 @@ const CountryBasedSpotsCard = ({ spot }) => {
             {seasonality}
           </span>
         </div>
-        <div className="text-sm font-medium gap-2 text-justify">
+        <div className="text-sm text-black font-medium gap-2 text-justify">
           Description:{' '}
           <span className="text-gray-600 text-sm">
             {short_description.slice(0, 200)}......

@@ -57,7 +57,7 @@ const SingleTouristsSpotCard = ({ spot }) => {
           {travel_time} {' Days'}
         </div>
         <div className="text-base font-medium text-red-500">
-          Best season to travel:{' '}
+          Best season for tour:{' '}
           <span
             className={`p-2 m-2 text-black rounded-md ${
               seasonality === 'Summer' ? 'bg-orange-400' : 'bg-green-400'

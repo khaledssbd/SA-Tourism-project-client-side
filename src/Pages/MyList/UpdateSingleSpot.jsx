@@ -88,7 +88,7 @@ const UpdateSingleSpot = () => {
             {/* Left side */}
             <div className="flex-1">
               <label className="block mb-1">
-                Spot Image (1440px x 960px suits best)
+                Spot Image (1440px × 960px suits best)
               </label>
               <input
                 className="w-full p-2 border rounded-lg focus:outline-green-500"
