@@ -15,6 +15,7 @@
   Interface) support with post get put delete requests
 - Custom API and Server configuration with database
 - tailwind CSS
+- Awesome dark theme support
 - Toast Message and sweet-alert2
 - aos, swiper and animate.css Implementation
 - Environment Variable configuration

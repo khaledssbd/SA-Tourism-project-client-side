@@ -15,7 +15,7 @@ const Countries = () => {
 
   return (
     <div>
-      <h4 className="text-[#131313] font-play text-xl md:text-3xl font-medium">
+      <h4 className="font-play text-xl md:text-3xl font-medium">
         <span style={{ color: '#fa237d', fontWeight: 'bold' }}>
           <Typewriter
             words={[
@@ -42,7 +42,8 @@ const Countries = () => {
             <Link
               to={`/country-based-spots/${country.country_Name}`}
               key={country._id}
-              className="p-3 bg-gray-300 rounded-xl hover:shadow-inner transform hover:scale-105 hover:bg-opacity-80 transition ease-out duration-200"
+              className="p-3 bg-gray-300 rounded-xl"
+              data-aos="zoom-out-up"
             >
               <img className="h-64 rounded-lg" src={country.image} alt="" />
               <h3 className="font-medium text-lg my-5 text-red-600">

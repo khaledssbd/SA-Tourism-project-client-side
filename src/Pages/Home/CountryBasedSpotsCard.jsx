@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { FaLocationPin, FaSackDollar} from 'react-icons/fa6';
-
+import { FaLocationPin, FaSackDollar } from 'react-icons/fa6';
 
 const CountryBasedSpotsCard = ({ spot }) => {
   const {
@@ -15,8 +14,8 @@ const CountryBasedSpotsCard = ({ spot }) => {
   } = spot;
 
   return (
-    <div className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary">
-      <h3 className="text-[#131313] font-play text-base sm:text-xl md:text-2xl font-bold flex-grow mt-4">
+    <div className="rounded-2xl border p-6 flex flex-col border-opacity-30 border-primary hover:shadow-inner transform hover:scale-105 hover:bg-opacity-80 transition ease-out duration-200">
+      <h3 className="font-play text-base sm:text-xl md:text-2xl font-bold flex-grow mt-4">
         {tourists_spot_name}
       </h3>
       <div className="flex justify-center items-center text-sm font-medium gap-1 mt-4 text-green-700">
@@ -46,7 +45,7 @@ const CountryBasedSpotsCard = ({ spot }) => {
         <div className="text-sm font-medium gap-2 text-justify">
           Description:{' '}
           <span className="text-gray-600 text-sm">
-            {short_description.slice(0,200)}......
+            {short_description.slice(0, 200)}......
           </span>
         </div>
       </div>

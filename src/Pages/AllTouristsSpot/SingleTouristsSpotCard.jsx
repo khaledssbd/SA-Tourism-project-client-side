@@ -18,6 +18,7 @@ const SingleTouristsSpotCard = ({ spot }) => {
   return (
     <div
       className="rounded-2xl bg-white border-2 p-6 flex flex-col border-opacity-30 border-primary"
+      // data-aos of this card on home will not work if the prior country card data-aos is inactive
       data-aos="zoom-out-up"
     >
       <div className="rounded-2xl bg-white">
@@ -31,10 +32,9 @@ const SingleTouristsSpotCard = ({ spot }) => {
         {tourists_spot_name}
       </h3>
 
-      <div className="flex justify-center items-center text-sm font-medium gap-1 mt-4 text-green-700">
-        Location:
-        <FaLocationPin />
-        {location}
+      <div className="flex justify-center items-center text-sm font-medium gap-1 mt-4 text-black">
+        
+        <FaLocationPin /><span className="text-green-700">{location}</span>
       </div>
       <div className="text-black pl-5 md:pl-8 py-5 my-5 border-y-2 border-dashed space-y-3">
         <div className="flex justify-center items-center text-sm font-medium gap-2">
