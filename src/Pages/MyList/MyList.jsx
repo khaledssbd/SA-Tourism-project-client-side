@@ -64,7 +64,7 @@ const MyList = () => {
           </thead>
           <tbody>
             {/* row starts here */}
-            {myAddedSpots.map((spot, i) => (
+            {myAddedSpots?.map((spot, i) => (
               <tr key={spot._id}>
                 <th>{i + 1}.</th>
                 <td>{spot.tourists_spot_name}</td>

@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet-async';
 import { Typewriter } from 'react-simple-typewriter';
+// import addIcon from '../../assets/addIcon.svg';
 
 const AddTouristsSpot = () => {
   const { user } = useContext(AuthContext);
@@ -70,11 +71,23 @@ const AddTouristsSpot = () => {
       <Helmet>
         <title>SA-Tourism | Add Spot</title>
       </Helmet>
-      <h5 className="text-2xl font-bold">
+      <h5 className="text-2xl font-bold flex justify-center items-center gap-3 text-[#fa237d]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 4c-4.879 0-9 4.121-9 9s4.121 9 9 9s9-4.121 9-9s-4.121-9-9-9zm4 10h-3v3h-2v-3H8v-2h3V9h2v3h3v2zm1.284-10.293l1.412-1.416l3.01 3l-1.413 1.417zM5.282 2.294L6.7 3.706l-2.99 3l-1.417-1.413z"
+            fill="currentColor"
+          />
+        </svg>
+
         <span style={{ color: '#fa237d', fontWeight: 'bold' }}>
           <Typewriter
             words={['Add Tourists Spot']}
-            loop={55}
+            loop={50}
             cursor
             cursorStyle="_"
             typeSpeed={70}
@@ -189,7 +202,7 @@ const AddTouristsSpot = () => {
                 required
                 name="user_name"
                 placeholder="Your name"
-                defaultValue={user.displayName}
+                defaultValue={user?.displayName}
               />
               <label className="block mt-4 mb-1 text-red-500">
                 Your Email {'(unchangeable)'}
@@ -200,7 +213,7 @@ const AddTouristsSpot = () => {
                 required
                 name="user_email"
                 placeholder="Your email"
-                defaultValue={user.email}
+                defaultValue={user?.email}
                 readOnly
               />
             </div>

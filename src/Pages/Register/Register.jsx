@@ -49,26 +49,27 @@ const Register = () => {
       return;
     }
 
-    // if (!/[!@#$%^&*=+]/.test(password)) {
-    //   setPassError(
-    //     'Password must have at least one special character like !,@,#,$,%,^,&,*,=,+'
-    //   );
-    //   return;
-    // }
-
-    // if (!/\d{2,}/.test(password)) {
-    //   setPassError('Password must have at least 2 numbers');
-    //   return;
-    // }
-
-    // if (password.length < 8) {
-    //   setPassError('Password must be of at least 8 characters');
-    //   return;
-    // }
-    if (password.length < 6) {
-      setPassError('Password must be of at least 6 characters');
+    if (!/[!@#$%^&*=+]/.test(password)) {
+      setPassError(
+        'Password must have at least one special character like !,@,#,$,%,^,&,*,=,+'
+      );
       return;
     }
+
+    if (!/\d{2,}/.test(password)) {
+      setPassError('Password must have at least 2 numbers');
+      return;
+    }
+
+    if (password.length < 8) {
+      setPassError('Password must be of at least 8 characters');
+      return;
+    }
+
+    // if (password.length < 6) {
+    //   setPassError('Password must be of at least 6 characters');
+    //   return;
+    // }
 
     if (password !== confirmPassword) {
       setPassError("Password and Confirm Password didn't match");
@@ -216,7 +217,7 @@ const Register = () => {
         </div>
       </form>
       <div className="">
-        <h2 className="text-xl mt-10 mb-4">Login With</h2>
+        <h2 className="text-xl mt-10 mb-4">Register With</h2>
         <div className="flex justify-center gap-8">
           <button
             onClick={() => {

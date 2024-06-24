@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
+import { Typewriter } from 'react-simple-typewriter';
 // npm i framer-motion
 
 const CarouselAni = ({ allSpots }) => {
@@ -12,7 +13,7 @@ const CarouselAni = ({ allSpots }) => {
 
   const handleNext = () => {
     setPositionIndexes(prevIndexes => {
-      const updateIndexes = prevIndexes.map(
+      const updateIndexes = prevIndexes?.map(
         prevIndex => (prevIndex + 1) % till
       );
       return updateIndexes;
@@ -45,12 +46,23 @@ const CarouselAni = ({ allSpots }) => {
     <div className="mt-10 md:mt-24 mb-0 md:mb-24">
       <h4
         className="font-play text-xl md:text-3xl font-medium -mb-20 lg:-mb-14"
-        data-aos="zoom-in"
+        // data-aos="zoom-in"
       >
-        Carousel Spots
+      
+        <span style={{ color: '#fa237d', fontWeight: 'bold' }}>
+          <Typewriter
+            words={['Spots we plan']}
+            loop={50}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
       </h4>
       <div className="flex items-center flex-col justify-center">
-        {showSpots.map((h, i) => (
+        {showSpots?.map((h, i) => (
           <motion.img
             key={i}
             src={h.image}

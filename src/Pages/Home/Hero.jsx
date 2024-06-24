@@ -34,14 +34,13 @@ const Hero = () => {
         Arrange your next tour with the best tour experts and get <br /> awesome
         discounts for you.
       </h3>
-      <h5
-        className="font-inter mb-10 mt-4 text-sm font-normal text-white md:text-lg px-3"
-      >
+      <h5 className="font-inter mb-10 mt-4 text-sm font-normal text-white md:text-lg px-3">
         <span style={{ color: 'white', fontWeight: 'bold' }}>
           <Typewriter
             words={[
               'We are the best tour planner as we guide and arrange comfortfull and secured tour for our Customers. We confirm both your enjoyment and security in your tour.',
             ]}
+            loop={50}
             cursor
             cursorStyle="_"
             typeSpeed={70}

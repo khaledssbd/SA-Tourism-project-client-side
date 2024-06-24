@@ -15,7 +15,7 @@ const CountryBasedSpots = () => {
         Tourists Spots in {country}: ({spots.length})
       </h5>
       <div className="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {spots.map(spot => (
+        {spots?.map(spot => (
           <CountryBasedSpotsCard
             key={spot._id}
             spot={spot}

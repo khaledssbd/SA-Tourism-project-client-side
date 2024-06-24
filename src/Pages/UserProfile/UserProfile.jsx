@@ -15,27 +15,22 @@ const UserProfile = () => {
       <h2 className="text-xl sm:text-2xl mt-10 mb-5 text-center font-bold">
         Your Profile
       </h2>
-      <div className=" md:w-3/4 lg:w-1/2 mx-auto">
-        <div className="md:pl-20">
-          <h4 className="text-base text-left font-medium">
-            Name:
-            <span className="text-amber-700 ml-2">{user.displayName}</span>
-          </h4>
-          <div className="flex justify-start gap-10 items-center my-5 md:my-10">
-            <h4 className="text-base text-left font-medium">
-              Profile Picture:
-            </h4>
-            <img
-              className="rounded-lg w-20"
-              title={user.displayName}
-              src={user?.photoURL || userImg}
-            />
-          </div>
-          <h4 className="text-base text-left font-medium">
-            Email:
-            <span className="text-amber-700 ml-2">{user.email}</span>
-          </h4>
+      <div className="md:w-3/4 lg:w-1/2 mx-auto">
+        <div className="flex justify-center items-center my-10">
+          <img
+            className="rounded-full w-48"
+            title={user?.displayName}
+            src={user?.photoURL || userImg}
+          />
         </div>
+        <h4 className="text-base font-medium my-4">
+          Name:
+          <span className="text-amber-700 ml-2">{user?.displayName}</span>
+        </h4>
+        <h4 className="text-base font-medium">
+          Email:
+          <span className="text-amber-700 ml-2">{user?.email}</span>
+        </h4>
       </div>
 
       <p className="text-center mt-10">

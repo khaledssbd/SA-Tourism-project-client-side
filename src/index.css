@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 #root {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   text-align: center;
 }
 

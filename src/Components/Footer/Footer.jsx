@@ -16,8 +16,15 @@ const Footer = () => {
             className="btn btn-ghost hover:bg-white hover:text-black text-base md:text-4xl font-extrabold md:mb-4"
             data-aos="flip-up"
           >
-            <button className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
-              SA-Tourism
+            <button className="flex justify-center items-center gap-2 md:gap-3">
+              <img
+                className="w-5 md:w-8 rounded-lg"
+                src="/favicon.png"
+                alt=""
+              />
+              <span className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
+                SA-Tourism
+              </span>{' '}
             </button>
           </Link>
           <p
@@ -34,7 +41,7 @@ const Footer = () => {
           </h4>
           <div className="flex gap-4 text-xl md:text-3xl mb-3">
             <a
-              href="https://www.facebook.com/khaledsshuvo1"
+              href="https://www.facebook.com/mdkhaledsshuvo"
               className="text-[#1877F2] cursor-pointer"
             >
               <FaFacebook />

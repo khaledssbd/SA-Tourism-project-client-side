@@ -25,7 +25,7 @@
 - Protected routes
 - Local Storage and API post configuration with Protected route
 - Adaptable & Robust
-- No lorem text and no javascript default alart
+- No lorem text and no javascript default alert
 
 # Selected category name- B9 A10 Type-01 Requirements (Southeast Asia)
 

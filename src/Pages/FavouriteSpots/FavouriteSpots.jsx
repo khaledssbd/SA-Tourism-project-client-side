@@ -85,7 +85,7 @@ const FavouriteSpots = () => {
         </div>
       )}
       <div className="w-4/5 md:w-3/4 lg:w-1/2 mx-auto space-y-5">
-        {showSpots.map((spot, i) => (
+        {showSpots?.map((spot, i) => (
           <div
             key={i}
             className="flex flex-col md:flex-row justify-center items-center gap-6 border rounded-xl p-3 bg-slate-200"

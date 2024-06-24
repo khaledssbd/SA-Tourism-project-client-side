@@ -4,8 +4,10 @@ import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import toast from 'react-hot-toast';
 import { Tooltip } from 'react-tooltip';
-import SUN from '../../assets/sun.svg';
-import MOON from '../../assets/moon.png';
+// import SUN from '../../assets/sun.svg';
+// import DARK from '../../assets/dark.png';
+import MOON from '../../assets/moon.svg';
+import LIGHT from '../../assets/light.png';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -137,7 +139,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navLinks}
           </ul>
@@ -146,8 +148,11 @@ const Navbar = () => {
           to="/"
           className="btn -ml-6 sm:-ml-0 btn-ghost hover:bg-black hover:text-black text-lg sm:text-xl md:text-3xl font-bold"
         >
-          <button className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
-            SA-Tourism
+          <button className="flex justify-center items-center gap-2 md:gap-3">
+            <img className="w-5 md:w-8 rounded-lg" src="/favicon.png" alt="" />
+            <span className="bg-gradient-to-r from-primary to-red-500 text-transparent bg-clip-text">
+              SA-Tourism
+            </span>{' '}
           </button>
         </Link>
       </div>
@@ -157,16 +162,9 @@ const Navbar = () => {
       <div className="navbar-end">
         {/* Dark theme toggle */}
         {theme === 'light' ? (
-          <img onClick={handleToggle} className="w-10" src={SUN} alt="" />
+          <img onClick={handleToggle} className="w-10" src={MOON} alt="" />
         ) : (
-          <div className=" text-white">
-            <img
-              onClick={handleToggle}
-              className="w-10 text-white"
-              src={MOON}
-              alt=""
-            />
-          </div>
+          <img onClick={handleToggle} className="w-10" src={LIGHT} alt="" />
         )}
         {/* User image part */}
         {user ? (
@@ -195,7 +193,11 @@ const Navbar = () => {
                   }
                   data-tooltip-place="top"
                 >
-                  <img src={user?.photoURL || userImg} />
+                  <img
+                    src={user?.photoURL || userImg}
+                    referrerPolicy="no-referrer"
+                    alt="User Profile Photo"
+                  />
 
                   <Tooltip id="userName" />
                 </div>

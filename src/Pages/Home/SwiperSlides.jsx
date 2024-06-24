@@ -31,7 +31,7 @@ const SwiperSlides = ({ allSpots }) => {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
         >
-          {allSpots.map((spot, i) => (
+          {allSpots?.map((spot, i) => (
             <SwiperSlide key={i}>
               <img
                 src={spot.image}

@@ -6,21 +6,7 @@ import { Helmet } from 'react-helmet-async';
 const UpdateSingleSpot = () => {
   const spot = useLoaderData();
 
-  const {
-    _id,
-    image,
-    tourists_spot_name,
-    country_Name,
-    location,
-    short_description,
-    average_cost,
-    seasonality,
-    travel_time,
-    totalVisitorsPerYear,
-  } = spot;
-
-  
-  // const { _id, image, tourists_spot_name, country_Name, location, short_description, average_cost, seasonality, travel_time, totalVisitorsPerYear, user_name, user_email} = spot;
+  const { _id, image, tourists_spot_name, country_Name, location, short_description, average_cost, seasonality, travel_time, totalVisitorsPerYear, user_name, user_email, } = spot;
 
   const handleAddProduct = e => {
     e.preventDefault();
@@ -69,6 +55,14 @@ const UpdateSingleSpot = () => {
             text: 'Spot Updated Successfully!',
             icon: 'success',
             confirmButtonText: 'OK',
+          });
+        }
+        if (data.modifiedCount === 0) {
+          Swal.fire({
+            title: 'Error!',
+            text: 'Nothing new to update',
+            icon: 'error',
+            confirmButtonText: 'Ok...',
           });
         }
       });
@@ -190,7 +184,7 @@ const UpdateSingleSpot = () => {
                 name="totalVisitorsPerYear"
                 defaultValue={totalVisitorsPerYear}
               />
-              {/* <label className="block mt-4 mb-1 text-red-500">
+              <label className="block mt-4 mb-1 text-red-500">
                 Your Name {'(unchangeable)'}
               </label>
               <input
@@ -213,7 +207,7 @@ const UpdateSingleSpot = () => {
                 placeholder="Your email"
                 defaultValue={user_email}
                 readOnly
-              /> */}
+              />
             </div>
           </div>
 
