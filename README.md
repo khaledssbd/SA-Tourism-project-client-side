@@ -5,7 +5,8 @@
 - Click here- [SA-Tourism on firebase](https://sa-tourism-khaled.web.app)
 - Click here- [SA-Tourism on vercel](https://ph-a10-client-by-khaled.vercel.app)
 - Click here- [SA-Tourism on surge](https://ph-a10-client-by-khaled.surge.sh)
-- Click here- [SA-Tourism on netlify](https://ph-a10-client-by-khaled.netlify.app)
+- Click here-
+  [SA-Tourism on netlify](https://ph-a10-client-by-khaled.netlify.app)
 
 ## GitHub Repository:
 
@@ -15,7 +16,48 @@
 
 ---
 
-## Getting Started
+# Project Overview:
+SA-Tourism is a tourism based web application for South Asian spots where tourists can get details of spots and plan for future tour.
+
+
+# Features:
+
+- Creative Design
+- All Device Responsive
+- CRUD or REST(Representational State Transfer) API(Application Programming
+  Interface) support with post get put delete requests
+- Custom API and Server configuration with database
+- tailwind CSS
+- Awesome dark theme support
+- Toast Message and sweet-alert2
+- aos, swiper and animate.css Implementation
+- Environment Variable configuration
+- Regex with Valid email
+- Regex with Uppercase letters, lowercase letters and 6 characters in password
+- Protected routes
+- Local Storage and API post configuration with Protected route
+- Adaptable & Robust
+- No lorem text and no javascript default alert
+
+# npm Packages
+
+- npm i aos
+- npm i swiper
+- npm i animate.css --save
+- npm i react-icons
+- npm i react-helmet-async
+- npm i framer-motion
+- npm i react-hot-toast
+- npm install -g firebase-tools
+- npm i lottie-react (in error page and loading. e.g.
+  [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
+- npm i react-simple-typewriter (in hero section and country title, 'Add
+  Tourists Spot' page title)
+- npm install react-tooltip (in userImage which will be showed after login)
+
+---
+
+# Getting Started
 
 To run this React project on your local machine follow the instructions-
 
@@ -61,39 +103,3 @@ Before you begin, ensure you have the following installed on your local machine:
 
    This will run the app in development mode. Open
    [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
-# Features:
-
-- Creative Design
-- All Device Responsive
-- CRUD or REST(Representational State Transfer) API(Application Programming
-  Interface) support with post get put delete requests
-- Custom API and Server configuration with database
-- tailwind CSS
-- Awesome dark theme support
-- Toast Message and sweet-alert2
-- aos, swiper and animate.css Implementation
-- Environment Variable configuration
-- Regex with Valid email
-- Regex with Uppercase letters, lowercase letters and 6 characters in password
-- Protected routes
-- Local Storage and API post configuration with Protected route
-- Adaptable & Robust
-- No lorem text and no javascript default alert
-
-
-# npm Packages
-
-- npm i aos
-- npm i swiper
-- npm i animate.css --save
-- npm i react-icons
-- npm i react-helmet-async
-- npm i framer-motion
-- npm i react-hot-toast
-- npm install -g firebase-tools
-- npm i lottie-react (in error page and loading. e.g.
-  [here](http://localhost:5173/add-tourists-spotffgdfdfgfdvgdfg))
-- npm i react-simple-typewriter (in hero section and country title, 'Add
-  Tourists Spot' page title)
-- npm install react-tooltip (in userImage which will be showed after login)
