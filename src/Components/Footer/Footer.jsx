@@ -72,7 +72,7 @@ const Footer = () => {
             228C San Pablo St. Vallejo, CA 94591
           </h4>
           <h4 className="text-gray-300 text-xs sm:text-sm">
-            Email: khaled@PH.com
+            Email: khaledssbd@gmail.com
           </h4>
         </div>
       </div>
